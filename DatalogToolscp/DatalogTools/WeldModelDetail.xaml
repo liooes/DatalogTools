@@ -1,0 +1,15 @@
+﻿<Window x:Class="DatalogTools.WeldModelDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="焊接详细记录" Height="450" Width="300" WindowStartupLocation="CenterScreen" Background="White">
+    <Grid Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition> 
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Name="gData">
+            <ListBox  Name="lstDetial"/>
+        </Grid>
+        <Button Name="btnPrint" VerticalAlignment="Bottom" Grid.Row="1" Content="打印" FontSize="15" Height="50" FontFamily="微软雅黑" FontWeight="Bold" Click="btnPrint_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="DatalogTools.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="300" Width="450" WindowStartupLocation="CenterScreen" WindowStyle="None" WindowState="Normal" AllowsTransparency="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="223*"/>
+            <RowDefinition Height="52*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="title" Background="#FF409DE4" MouseMove="title_MouseMove">
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top"   Orientation="Horizontal">
+                <!--<Button x:Name="btnMini" HorizontalAlignment="Right" Margin="0,-4,20,0" Style="{StaticResource MiniButtonTemplate}" VerticalAlignment="Center"  />-->
+                <Button x:Name="btnClose" HorizontalAlignment="Right" Margin="0,-4,5,0" Style="{StaticResource ClosedButtonTemplate}" VerticalAlignment="Center" Click="btnClose_Click" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Background="#FFEACD83" >
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Image Source="Resources/logs.png" Width="220" Height="60"/>
+                
+                <Label Margin="0,35,0,0" FontSize="25" FontFamily="楷体">绍兴科飝电气有限公司</Label>
+                <!--<Label Margin="0,15,0,0" FontStyle="Italic" FontSize="18">联系我们：</Label>
+                <Label Margin="25,0,0,0" FontStyle="Italic" FontSize="18">宋成明：150 6751 2114</Label>-->
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2" Margin="0,0,-0.4,0" Background="#FFEACD83" >
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="楷体" FontStyle="Italic" FontSize="16">版权所有翻版必究
+            </Label>
+        </Grid>
+    </Grid>
+</Window>
